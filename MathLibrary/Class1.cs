@@ -6,27 +6,28 @@ using System.Threading.Tasks;
 
 namespace MathLibrary
 {
-    public class Class1
+    public class number
     {
-        public double n1 
+        public double x
         { get; set; }
-        public double n2
+        public double y
         { get; set; }
-        public double add()
+
+        public double plus()
         {
-            return n1 + n2;
+            return x + y;
         }
         public double sub()
         {
-            return n1 - n2;
+            return x - y;
         }
         public double mult()
         {
-            return n1 * n2;
+            return x * y;
         }
         public double division()
         {
-            return n1 / n2;
+            return x / y;
         }
     }
 }
