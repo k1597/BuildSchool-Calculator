@@ -12,19 +12,21 @@ namespace MathLibrary
         { get; set; }
         public double n2
         { get; set; }
-
-        public double plus()
-        {
-            return n1 +n2;
-        }
         public double add()
         {
             return n1 + n2;
         }
         public double sub()
         {
-            return n1 + n2;
+            return n1 - n2;
         }
-
+        public double mult()
+        {
+            return n1 * n2;
+        }
+        public double division()
+        {
+            return n1 / n2;
+        }
     }
 }
