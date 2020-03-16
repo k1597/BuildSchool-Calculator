@@ -15,6 +15,7 @@ namespace Calculator
     {
         double x=5, y=0;
         int alpha = 0;
+        number num = new number();
 
         public Form1()
         {
@@ -22,11 +23,8 @@ namespace Calculator
         }
 
         private void button24_Click(object sender, EventArgs e)
-        {
-            number num = new number();
-            y = int.Parse(textBox1.Text);
-            num.x = x;
-            num.y = y;
+        {            
+            num.y = int.Parse(textBox1.Text);
             switch (alpha) 
             {
                 case 1: textBox1.Text=num.plus().ToString(); break;
@@ -93,7 +91,7 @@ namespace Calculator
 
         private void button25_Click(object sender, EventArgs e)
         {
-            x = int.Parse(textBox1.Text);
+            num.x = int.Parse(textBox1.Text);
             alpha = 1;
             textBox1.Clear();
         }
@@ -101,7 +99,7 @@ namespace Calculator
         private void button20_Click(object sender, EventArgs e)
         {
             //textBox1.Text += "-";
-            x = int.Parse(textBox1.Text);
+            num.x = int.Parse(textBox1.Text);
             alpha = 2;
             textBox1.Clear();
         }
@@ -109,7 +107,7 @@ namespace Calculator
         private void button15_Click(object sender, EventArgs e)
         {
             //textBox1.Text += "*";
-            x = int.Parse(textBox1.Text);
+            num.x = int.Parse(textBox1.Text);
             alpha = 3;
             textBox1.Clear();
         }
@@ -117,7 +115,7 @@ namespace Calculator
         private void button10_Click(object sender, EventArgs e)
         {
             //textBox1.Text += "/";
-            x = int.Parse(textBox1.Text);
+            num.x = int.Parse(textBox1.Text);
             alpha = 4;
             textBox1.Clear();
         }
